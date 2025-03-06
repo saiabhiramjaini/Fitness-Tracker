@@ -1,4 +1,4 @@
-import lateralRaise from "@/assets/pushup.mp4";
+import lateralRaise from "@/assets/lateral-raise.mp4";
 import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 

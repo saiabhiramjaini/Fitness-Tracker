@@ -1,4 +1,4 @@
-import curl from "@/assets/pushup.mp4";
+import curl from "@/assets/curls.mp4";
 import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 

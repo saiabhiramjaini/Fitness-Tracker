@@ -1,4 +1,4 @@
-import plank from "@/assets/pushup.mp4";
+import plank from "@/assets/plank.png";
 import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -31,7 +31,8 @@ export const PlankPreviewPage = () => {
           <div className="grid md:grid-cols-2 gap-0">
             {/* Video Column */}
             <div className="relative bg-gray-900">
-              <video
+              <img src={plank} alt="" className="w-full h-full object-cover"/>
+              {/* <video
                 src={plank}
                 controls
                 autoPlay
@@ -39,7 +40,7 @@ export const PlankPreviewPage = () => {
                 muted
                 className="w-full h-full object-cover"
                 poster="/placeholder.svg?height=480&width=640"
-              />
+              /> */}
             </div>
 
             {/* Instructions Column */}

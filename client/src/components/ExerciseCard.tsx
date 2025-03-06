@@ -35,11 +35,11 @@ const ExerciseCard: React.FC<ExerciseCardProps> = ({
         <div
           className={`absolute inset-0 bg-gradient-to-r ${exercise.color} opacity-80`}
         ></div>
-        <img
+        {/* <img
           src={exercise.image || "/placeholder.svg"}
           alt={exercise.name}
           className="w-full h-full object-cover"
-        />
+        /> */}
         <div className="absolute inset-0 flex items-center justify-center">
           <h3 className="text-2xl font-bold text-white">{exercise.name}</h3>
         </div>
