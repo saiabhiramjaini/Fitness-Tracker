@@ -10,7 +10,14 @@ from pushups import analyze_pushup_frame
 from squats import analyze_squat_frame
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+# CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
+CORS(app, resources={r"/*": {"origins": "https://fitness-tracker-two-gamma.vercel.app"}}, supports_credentials=True, allow_headers=["Content-Type"])
+
+from flask_cors import CORS
+
+CORS(app, resources={r"/*": {"origins": ["https://fitness-tracker-two-gamma.vercel.app", "http://localhost:5173"]}}, 
+     supports_credentials=True, 
+     allow_headers=["Content-Type"])
 
 
 @app.route('/analyze_plank', methods=['POST'])
